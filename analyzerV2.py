@@ -234,13 +234,13 @@ canvas.get_tk_widget().pack(side=tkinter.TOP, fill=tkinter.BOTH, expand=1)
 txtBox0 = tkinter.Entry(root)
 txtBox0.place(x=20, y=40)
 lbl0 = tkinter.Label(root, text="durchgezogen")
-lbl0.place(x=200, y=40)
+lbl0.place(x=150, y=40)
 lbl1 = tkinter.Label(root, text="gestrichelt")
-lbl1.place(x=200, y=80)
+lbl1.place(x=150, y=80)
 lbl0 = tkinter.Label(root, text="gepunktet")
-lbl0.place(x=200, y=120)
+lbl0.place(x=150, y=120)
 lbl1 = tkinter.Label(root, text="gestrichpunktet")
-lbl1.place(x=200, y=160)
+lbl1.place(x=150, y=160)
 txtBox1 = tkinter.Entry(root)
 txtBox1.place(x=20, y=80)
 txtBox2 = tkinter.Entry(root)
@@ -250,7 +250,7 @@ txtBox3.place(x=20, y=160)
 
 
 slider = tkinter.Scale(root, from_=1, to=35, orient=tkinter.HORIZONTAL, length=300, command=slide_change)
-slider.place(x=20, y=250)
+slider.place(x=20, y=580)
 
 varSpeed = tkinter.BooleanVar()
 chckSpeed = tkinter.Checkbutton(root, text="Speed", command=check_box, variable=varSpeed)
@@ -269,11 +269,11 @@ btnSubmit.place(x=20, y=200)
 
 
 btnChangeScale = tkinter.Button(root, command=btn_slide, text="Change Average")
-btnChangeScale.place(x=20, y=290)
+btnChangeScale.place(x=20, y=540)
 
 Dates = tkinter.StringVar(root)
 lblDates = tkinter.Label(root, textvariable=Dates)
-lblDates.place(x=20, y=550)
+lblDates.place(x=20, y=250)
 
 
 def _quit():
